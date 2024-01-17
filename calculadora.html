@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script>
+      const arr = ["1", "2", "3"];
+      // document.getElementById("mostrar").innerHTML = arr;
+
+      function mostrar_x_pantalla(valor) {
+        arr.push(valor);
+        // (c);
+        // alert("Valor del button: " + valor);
+        document.getElementById("numero_consola").innerHTML = arr;
+      }
+    </script>
+
+    <style>
+      body {
+        background: gray;
+      }
+      .bloque {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 50%;
+        height: 100%;
+        padding: 10%;
+      }
+      #bloque_consola_calc {
+        text-align: right;
+        margin-top: 10px;
+        border-radius: 1px;
+        border: 1px solid black;
+        margin: 10px;
+        padding: 15px;
+      }
+      .formulario {
+        width: auto;
+      }
+      #bloque_teclado_calc {
+        /* margin-left: 40%; */
+        width: 100%;
+
+        /* padding: 10px; */
+      }
+      #bloque_teclado_calc input {
+        padding: 15px;
+        width: 150px;
+      }
+      /* #bloque_teclado_calc {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: flex-end;
+      } */
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="bloque">
+        <h1>Ejemplo #1</h1>
+        3344
+        <div id="bloque_prin_calc"><p>Calculadora</p></div>
+        <div id="bloque_consola_calc">
+          <span id="numero_consola">0</span>
+        </div>
+
+        <!-- OPERACIONES CON INPUT -->
+        <div id="bloque_teclado_calc">
+          <form class="formulario" action="" method="post">
+            <input
+              type="button"
+              value="0"
+              class="btn_numeros"
+              onclick="mostrar_x_pantalla(this.value)"
+            />
+            <input
+              type="button"
+              value="1"
+              class="btn_numeros"
+              onclick="mostrar_x_pantalla(this.value)"
+            />
+            <input
+              type="button"
+              value="2"
+              class="btn_numeros"
+              onclick="mostrar_x_pantalla(this.value)"
+            />
+            <input
+              type="button"
+              value="3"
+              class="btn_numeros"
+              onclick="mostrar_x_pantalla(this.value)"
+            />
+            <input
+              type="button"
+              value="4"
+              class="btn_numeros"
+              onclick="mostrar_x_pantalla(this.value)"
+            />
+            <input
+              type="button"
+              value="5"
+              class="btn_numeros"
+              onclick="mostrar_x_pantalla(this.value)"
+            />
+            <input
+              type="button"
+              value="6"
+              class="btn_numeros"
+              onclick="mostrar_x_pantalla(this.value)"
+            />
+            <input
+              type="button"
+              value="7"
+              class="btn_numeros"
+              onclick="mostrar_x_pantalla(this.value)"
+            />
+            <input
+              type="button"
+              value="8"
+              class="btn_numeros"
+              onclick="mostrar_x_pantalla(this.value)"
+            />
+            <input
+              type="button"
+              value="9"
+              class="btn_numeros"
+              onclick="mostrar_x_pantalla(this.value)"
+            />
+          </form>
+          <h1>otros botones</h1>
+          <!-- ////////////////////////////////////////////// -->
+
+          <!-- ///////////////////////////////////////////// -->
+          <div id="otros_botones">
+            <input id="btn_otro" type="button" value="" />
+          </div>
+          <script>
+            let arre =[];
+            for (let i = 0; i <= 9; i++) {
+              // alert("entro");
+              // btn_num = i;
+              arre += "<input id='btn_otro' type='button' value='"+ i +"'   onclick='mostrar_x_pantalla(this.value)'/>";
+              document.getElementById("otros_botones").innerHTML = arre;
+              // if (i == 9) break;
+            }
+          </script>
+        </div>
+        <!-- FIN -->
+      </div>
+    </main>
+  </body>
+</html>
