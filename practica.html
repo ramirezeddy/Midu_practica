@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>practica</title>
+    <script src="tecnicas.js" defer></script>
+    <style>
+      .contenedor{
+        display: flex;
+        flex-direction: row;
+        border-color: black;
+        border-width: 5px;
+        border-style: solid;
+        text-align: center;
+        width: 600px;
+        min-height: 150px;
+        border-width: 1px;
+        /* gap: 10px; */
+      }
+      #mostrar_lista ,#mostrar_lista2 {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        min-height: 150px;
+        border-color: black;
+        border-width: 1px;
+        border-style: solid;
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <p>declarar y agregar contenido en un array</p>
+      <h1>ANTES:</h1>
+      <p id="mostrar"></p>
+      <h1>DESPUES:</h1>
+      <p id="mostrar2"></p>
+
+      <h1>Cambiara con botones</h1>
+      <p id="consola_ejemplo"></p>
+      <input
+        type="button"
+        value="VER OBJETO"
+        onclick="mostrar_result(this.value)"
+      />
+      <div class="contenedor">
+        <div id="mostrar_lista"></div>
+        <div id="mostrar_lista2"></div>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+hr{
+    margin: 0px 50px;
+}
+.principal_contenedor{
+    list-style:none;
+    display: flex;
+max-width: 100%;
+height: 100%;
+}
+ ul{ 
+    text-decoration:none;
+}
+.lateral_izquierdo{
+    margin: 5%;
+    width: 20%;
+text-align: left;   
+}
+.lateral_izquierdo button{
+/* margin-left: 50%; */
+width: 100%;
+background-color: black;
+color: white;
+border-radius: 15%;
+padding:10px;
+}
+.lateral_izquierdo img, .foto_perfil{
+  border-radius: 100%;
+
+}
+.lateral_izquierdo li ul{
+    padding-bottom:10px ;
+}
+
+.listas_encabezado_lateral ul{
+   padding: 0px;
+    text-align: left;
+}
+.listas_encabezado_lateral a{
+text-decoration: none;
+color:black;
+font-weight:bold ;
+}
+.nombre_id h2,h6{
+    margin: 0px;
+}
